@@ -12,9 +12,8 @@
 
 ## create & clone
 
-If you fork a repository, you add it to your GitHub<br>
-It creates a full copy of the repo<br>
-And by cloning it, you push that repo to your computer (locally)
+If you fork a repository, you add it to your GitHub. It creates a full copy of the repo<br>
+By cloning it, you push that repo to your computer (locally)
 
 - create new repository
 ```bash
@@ -62,7 +61,7 @@ git clone <repository-url> --no-tags
 ```
 
 > On Git URLs:<br>
-> The information given in the URL depends on the transport protocol.
+> The information given in the URL depends on the transport protocol<br>
 > Git supports ssh, git, http, and https protocols
 
 - remove localy the history of the cloned repository
