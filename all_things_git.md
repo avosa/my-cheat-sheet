@@ -156,9 +156,12 @@ git push origin <name_of_branch>
 
 - print a list of local & remote branches
 ```bash
-git branch -a
+# print a list of just local branches
+git branch
 # print a list of just remote branches
 git branch -r
+# print a list of both local & remote branches
+git branch -a
 ```
 
 - clean up local unused branches
