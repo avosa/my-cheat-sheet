@@ -205,9 +205,17 @@ git sweep
 
 ## merge
 
-- merge changes from another branch
+- `git merge` combines two or more development histories together
+- when used with `fetch`, it will combine the fetched history of the remote branch into the currently checkout out local branch
+
+- merge changes
 ```bash
+# merge changes from one branch to the branch you are
+# currently checked out
+gco master
 git merge <name_of_branch>
+# merge master into the branch you are currently checked out
+gco <name_of_branch>
 git merge master
 ```
 
@@ -217,6 +225,21 @@ git merge master
 git diff <file_folder>
 # between two branches
 git diff <source_branch> <target_branch>
+```
+
+- main options provided with merge
+```bash
+# aborts the merge process and restores the project’s state to before the merge was attempted
+# it works as a failsafe when a conflict occurs
+git merge --abort
+# attempt to complete a merge that was stopped due to file conflicts after resolving the merge conflict
+git merge --continue
+# combine all changes from the branch being merged into a single commit rather than preserving them as individual commits
+git merge --squash
+# combine a branch into the current branch, wihtout making a new commit
+git merge --no-commit
+# creates a merge commit instead of attempting a fast-forward
+git merge --no-ff
 ```
 
 ## tagging
