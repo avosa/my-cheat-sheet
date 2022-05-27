@@ -137,9 +137,20 @@ git remote add origin <server>
 ```
 
 - update local repository with remote changes
+- `git pull` combines a `git fetch` with a `git merge FETCH_HEAD`
 ```bash
 git pull origin master
 ggpull
+
+# suppress the output text after git fetch and merge
+git pull --quiet
+# expand the output text after git fetch and merge
+git pull --verbose
+# show the action that would be completed without actually making changes to your repo
+git pull --dry-run
+
+# combine all changes from the branch being merged into a single commit
+git pull --squash
 ```
 
 - show the history of commit logs
