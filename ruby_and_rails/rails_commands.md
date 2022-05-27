@@ -18,10 +18,10 @@ rails c --sandbox
 
 ## Starting a local server
 
-When you run `rails server` all dependencies/gems required by your Rails app are auto-loaded.
-This is sometimes called "booting" or loading the "Rails environment".
+When you run `rails server` all dependencies/gems required by your Rails app are auto-loaded
+This is sometimes called "booting" or loading the "Rails environment"
 
-It starts a web server named **WebRick**, which is a piece of ruby code which binds itself to a port on your computer and starts listening to incoming HTTPS requests. 
+It starts a web server named **WebRick**, which is a piece of ruby code which binds itself to a port on your computer and starts listening to incoming HTTPS requests
 When these requests come in:
 - the server takes care of the lower-level stuff like reading HTTP headers 
 - and rails takes care of figuring out what controller and action to route the request to (using your `routes.rb` file)<br> 
@@ -39,13 +39,12 @@ rails s -p 4000
 
 ## Install gems
 
-- Installing gems in `sudo` will install it in the root (for all users) - Not recommended!
-- It gives access to your computer to possible malicious code
+> Installing gems in `sudo` will install it in the root (for all users) - Not recommended!<br>
+> It gives access to your computer to possible malicious code
 
 ```bash
-curl ...
+# install the dependencies specified in your Gemfile
 bundle install
-yarn add bootstrap
 
 # show what gems are installed
 gem list  
@@ -119,7 +118,7 @@ end
 
 ## 7 CRUD actions
 
-index / show / new / create / edit / update / destroy
+index / show / new / create / edit / update / destroy<br>
 get   / get  / get / post   / get  / patch  / delete
 
 
@@ -127,18 +126,21 @@ get   / get  / get / post   / get  / patch  / delete
 
 ### VERB
 
-REST pattern |   CRUD pattern (used to speak with db)
-
-GET          |   Read
-POST         |   Create
-PATCH        |   Update
-DELETE       |   Delete
+**REST pattern** |  **CRUD pattern (used to speak with db)**
+-------------------------------------------------------------
+GET              |   Read
+-------------------------------------------------------------
+POST             |   Create
+-------------------------------------------------------------
+PATCH            |   Update
+-------------------------------------------------------------
+DELETE           |   Delete
 
 ### URL
 
-http    ://   www.google.com/       search?    q=wagon&hl=en
-----          -----------------     -------    -------------
-scheme        damin name / host     path       query string
+http    | ://  |  www.google.com/    |  search? | q=wagon&hl=en
+----------------------------------------------------------------
+scheme  |      |   damin name / host |   path   | query string
 
 ### Headers
 
@@ -154,13 +156,17 @@ browser > inspect > network > headers
 
 ```bash
 # write ruby code
-<% %> | er + tab         
+<% %>
+er + tab         
 # write ruby code and inject output in HTML
-<%= %> | pe + tab         
+<%= %> 
+pe + tab         
+# link tag
+<%= link_to 'about', about_path %> 
+it + tab
 
-<%= link_to 'about', about_path %> | it + tab
-
-_ form.html.erb
+# partial file and render tag
+_form.html.erb
 <%= render 'form', restaurtant: @restaurant %>
 ```
 
