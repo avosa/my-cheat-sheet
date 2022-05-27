@@ -1,22 +1,27 @@
 # git cheat sheet
 
-- git - version control system / command line tool
-      - track changes in code & save versions
-      - share & collaborate
+### git
+- It's a version control system and Command Line Tool (CLT)
+- Track changes in your code & save versions
+- Enables you to share & collaborate within a team
 
-- GitHub - web platform / service that hosts git repositories
-         - hosts code under git management
+### GitHub
+- It's a web platform 
+- A service that hosts git repositories
+- It hosts your code under git management
 
 ## create & clone
 
-- If you fork a repository, you add it to your github / full copy of the repo
-- Cloning it, pushes it to your computer
+If you fork a repository, you add it to your GitHub<br>
+It creates a full copy of the repo<br>
+And by cloning it, you push that repo to your computer (locally)
 
 - create new repository
 ```bash
 # create folder locally
 mkdir new_project
 cd new_project
+
 # create a new empty Git repo - a .git directory
 # an initial branch is created without commits
 # it's used to start using git on a project that is not yet under git
@@ -56,8 +61,8 @@ git clone <repository-url> --depth <depth>
 git clone <repository-url> --no-tags
 ```
 
-> On Git URLs:
-> the information given in the URL depends on the transport protocol
+> On Git URLs:<br>
+> The information given in the URL depends on the transport protocol.
 > Git supports ssh, git, http, and https protocols
 
 - remove localy the history of the cloned repository
@@ -106,8 +111,7 @@ git rm <file_name>
 
 ## commit & synchronize
 
-- commit / save changes to your repo
-- commiting them takes a snapshot of the work done
+- commit / save changes to your repo (commiting them takes a snapshot of the work done)
 ```bash
 git commit --message 'comment' 
 git commit -m "message"
@@ -129,8 +133,10 @@ git commit --no-edit
 git push <remote> <branch>
 git push origin master
 git push origin branch-name 
+
 # push the current checked out branch to the default remote origin
 ggpush
+
 # force push in a non-fast-forward merge (use with care)
 git push <remote> --force
 ```
@@ -220,8 +226,8 @@ git sweep
 
 ## merge
 
-- `git merge` combines two or more development histories together
-- when used with `fetch`, it will combine the fetched history of the remote branch into the currently checkout out local branch
+`git merge` combines two or more development histories together<br>
+When used with `fetch`, it will combine the fetched history of the remote branch into the currently checkout out local branch
 
 - merge changes
 ```bash
@@ -229,6 +235,7 @@ git sweep
 # currently checked out
 gco master
 git merge <name_of_branch>
+
 # merge master into the branch you are currently checked out
 gco <name_of_branch>
 git merge master
@@ -261,9 +268,10 @@ git merge --no-ff
 
 ## tagging
 
--  create a tag (with example)
+-  create a tag
 ```bash
 git tag <tag> <commit ID>
+# example
 git tag 1.0.0 1b2e1d63ff
 ```
 
@@ -286,8 +294,6 @@ git checkout -b <branch-name><tag-name>
 ```bash
 git checkout --<file_name>
 ```
-
-*still to add*
 
 ## cherry-picking
 
