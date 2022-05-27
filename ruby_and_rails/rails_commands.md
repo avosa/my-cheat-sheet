@@ -119,6 +119,7 @@ end
 ## 7 CRUD actions
 
 | index | show | new | create | edit | update | destroy |
+| ----- | ---- | --- | ------ | ---- | ------ | ------- |
 | get   | get  | get | post   | get  | patch  | delete  |
 
 
