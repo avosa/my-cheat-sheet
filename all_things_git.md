@@ -76,7 +76,7 @@ git add <file_name>
 git add .
 ```
 
-- remove / delete
+- remove / delete file
 ```bash
 git rm <file_name>
 ```
@@ -119,11 +119,18 @@ git log
 git lg
 ```
 
+- checkout a previous git commit
+```bash
+git checkout <commit hash>
+```
+
 ## branches
 
 - create a new branch
 ```bash
 git checkout -b <name_of_branch>
+# create a local branch from the remote Git branch and checkout that branch
+git checkout -b <branch-name><remote-name>/<branch-name>
 ```
 
 - switch to another branch (example master)
@@ -194,6 +201,14 @@ git tag 1.0.0 1b2e1d63ff
 - get commit IDs
 ```bash
 git log
+```
+
+- checkout a git tag
+```bash
+# in a detached HEAD state
+git checkout <tag name>
+# as a branch
+git checkout -b <branch-name><tag-name>
 ```
 
 ## restore
