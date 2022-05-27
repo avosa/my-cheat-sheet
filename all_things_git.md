@@ -284,3 +284,11 @@ git checkout -b <branch-name><tag-name>
 ```bash
 git checkout --<file_name>
 ```
+
+*still to add*
+
+## cherry-picking
+
+## rebase
+
+## stash
