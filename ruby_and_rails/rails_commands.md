@@ -120,7 +120,7 @@ end
 
 | index | show | new | create | edit | update | destroy |
 | ----- | ---- | --- | ------ | ---- | ------ | ------- |
-| get   | get  | get | post   | get  | patch  | delete  |
+| GET   | GET  | GET | POST   | GET  | PATCH  | DELETE  |
 
 
 ## HTTP - Hypertext Transfer Protocol
