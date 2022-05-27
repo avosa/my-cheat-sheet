@@ -137,15 +137,13 @@ git checkout master
 git branch -m <branch-name> <new-branch-name>
 ```
 
-- delete local branch
+- delete branches
 ```bash
+# delete a local branch
 git branch -d <name_of_branch>
 # delete a local Git branch with unmerged changes
 git branch -D <branch-name>
-```
-
-- delete a remote git branch
-```bash
+# delete a remote branch
 git push <remote> --delete <remote-branch-name>
 ```
 
