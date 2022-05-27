@@ -29,8 +29,7 @@ mkdir <directory-name>
 touch <file_name>
 ```
 
-- move location of a file or folder
-- change the name of a file or folder
+- move location of a file or folder OR change the name of a file or folder
 ```bash
 mv <file-to-move> <where-to-move>
 mv <file_name> <new_file_name>
@@ -73,8 +72,8 @@ irb
 
 ## Vim
 
-- Modal editor - different behaviours depending on active mode
-- Text editor that makes creating and changing text very efficiently
+Modal editor - different behaviours depending on active mode
+Text editor that makes creating and changing text very efficiently
 
 ```bash
 # change mode
@@ -105,9 +104,9 @@ Command + P
 
 ## rbenv
 
-- Lightweight Ruby version management tool (lighter than RVM)
-- It manages multiple Ruby 'environments'
-- It allows to quickly switch between Ruby implementations either on local directory or default 'system-wide' basis
+Lightweight Ruby version management tool (lighter than RVM)
+It manages multiple Ruby 'environments'
+It allows to quickly switch between Ruby implementations either on local directory or default 'system-wide' basis
 
 ```bash
 # currently active Ruby versions & all known ones
@@ -120,7 +119,7 @@ rbenv local 2.6.6
 
 ## mkmf.log
 
-- File bundled with the gem when you built it / install it
+File bundled with the gem when you built it / install it
 
 ```bash
 # find the file
