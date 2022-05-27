@@ -125,10 +125,14 @@ git commit --no-edit
 
 - push changes to remote repository
 ```bash
+# push specified branch & its commits to the destination remote repo
 git push <remote> <branch>
 git push origin master
 git push origin branch-name 
+# push the current checked out branch to the default remote origin
 ggpush
+# force push in a non-fast-forward merge (use with care)
+git push <remote> --force
 ```
 
 - connect local repository to remote repository
