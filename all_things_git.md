@@ -91,9 +91,11 @@ git status
 gst
 ```
 
-- add / stage changes from a specific file or add all changes
+- add / stage changes to your staging directory
 ```bash
+# all a specific file
 git add <file_name>
+# add all changes
 git add .
 ```
 
@@ -104,12 +106,18 @@ git rm <file_name>
 
 ## commit & synchronize
 
-- commit changes or add and commit changes
+- commit / save changes to your repo
 - commiting them takes a snapshot of the work done
 ```bash
 git commit --message 'comment' 
 git commit -m "message"
+
+# both add and commit changes
+# the -a will add all modified and deleted files in your working directory to the current commit
 git commit -am "message"
+
+# amend a git commit by editing the message in ""
+git commit --amend "message"
 
 # commiting using the default commit message
 git commit --no-edit
