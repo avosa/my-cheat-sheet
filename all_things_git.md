@@ -17,8 +17,16 @@
 # create folder locally
 mkdir new_project
 cd new_project
-# create an empty new repo
+# create a new empty Git repo - a .git directory
+# an initial branch is created without commits
+# it's used to start using git on a project that is not yet under git
 git init
+# create a public repo on gitHub
+gh repo create --public --source=.
+# check out 
+git remote -v
+# open the new repo in your browser
+gh repo view --web
 ```
 
 - clone local repository
@@ -44,14 +52,14 @@ rails new <name-rails-app> --database=postgresql
       --skip-active-storage --skip-action-mailbox
 cd <name-rails-app>
 
-# create a remote repo to push changes to gitHub
-hub create
-# install hub
-brew install hub
-# check the remote repo
+# create a new empty Git repo
+git init
+# create a public repo on gitHub
+gh repo create --public --source=.
+# check out 
 git remote -v
-# open gitHub repo
-hub browse
+# open the new repo in your browser
+gh repo view --web
 ```
 
 ## add & remove 
@@ -124,9 +132,21 @@ gco <name_of_branch>
 git checkout master
 ```
 
-- delete branch
+- rename a branch
+```bash
+git branch -m <branch-name> <new-branch-name>
+```
+
+- delete local branch
 ```bash
 git branch -d <name_of_branch>
+# delete a local Git branch with unmerged changes
+git branch -D <branch-name>
+```
+
+- delete a remote git branch
+```bash
+git push <remote> --delete <remote-branch-name>
 ```
 
 - push branch to remote repo
@@ -137,6 +157,8 @@ git push origin <name_of_branch>
 - print a list of local & remote branches
 ```bash
 git branch -a
+# print a list of just remote branches
+git branch -r
 ```
 
 - clean up local unused branches
