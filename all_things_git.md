@@ -36,8 +36,29 @@ git clone /path/to/repository
 
 - clone remote repository
 ```bash
+# remote url format contains info on transport protocol, the address of the remote
+# server and the path to the repository
+# ssh synatx: 
+# ssh://[user@]host.xz[:port]/path/to/repo.git/
+# or alternative scp-like syntax used with ssh protocol:
+# [user@]host.xz:path/to/repo.git/
 git clone username@host:/path/to/repository
+
+# clone a repository and name the local directory
+git clone <repository-url> <directory-name>
+# clone a repository and name the remote (<name>). If you do not wish to name the remote, Git will provide the default name origin
+git clone <repository-url> --origin <name>
+# clone a repository and checkout the specific branch
+git clone <repository-url> --branch <branch-name>
+# clone a repository with a specified number of commits (<depth>)
+git clone <repository-url> --depth <depth>
+# clone a repository without copying the repo’s tags
+git clone <repository-url> --no-tags
 ```
+
+> On Git URLs:
+> the information given in the URL depends on the transport protocol
+> Git supports ssh, git, http, and https protocols
 
 - remove localy the history of the cloned repository
 ```bash
