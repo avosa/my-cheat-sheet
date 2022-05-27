@@ -2,11 +2,6 @@
 
 ## Important commands
 
-- start a local server
-```bash
-rails s
-```
-
 - print routes & paths of application
 ```bash
 rails routes
@@ -21,6 +16,25 @@ rails c
 rails c --sandbox
 ```
 
+## Starting a local server
+
+When you run `rails server` all dependencies/gems required by your Rails app are auto-loaded.
+This is sometimes called "booting" or loading the "Rails environment".
+
+It starts a web server named **WebRick**, which is a piece of ruby code which binds itself to a port on your computer and starts listening to incoming HTTPS requests. 
+When these requests come in:
+- the server takes care of the lower-level stuff like reading HTTP headers 
+- and rails takes care of figuring out what controller and action to route the request to (using your `routes.rb` file) 
+The component of rails that does this work is called `action_dispatch` (`actionpack gem`)
+
+- start a local server
+```bash
+# 3000 is the default port
+rails server
+rails s
+# to specify a different port
+rails s -p 4000
+```
 
 ## Install gems
 
