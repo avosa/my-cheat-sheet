@@ -24,7 +24,7 @@ This is sometimes called "booting" or loading the "Rails environment".
 It starts a web server named **WebRick**, which is a piece of ruby code which binds itself to a port on your computer and starts listening to incoming HTTPS requests. 
 When these requests come in:
 - the server takes care of the lower-level stuff like reading HTTP headers 
-- and rails takes care of figuring out what controller and action to route the request to (using your `routes.rb` file) 
+- and rails takes care of figuring out what controller and action to route the request to (using your `routes.rb` file)<br> 
 The component of rails that does this work is called `action_dispatch` (`actionpack gem`)
 
 - start a local server
