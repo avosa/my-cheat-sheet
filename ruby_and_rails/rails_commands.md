@@ -18,7 +18,7 @@ rails c --sandbox
 
 ## Starting a local server
 
-When you run `rails server` all dependencies/gems required by your Rails app are auto-loaded
+When you run `rails server` all dependencies/gems required by your Rails app are auto-loaded<br>
 This is sometimes called "booting" or loading the "Rails environment"
 
 It starts a web server named **WebRick**, which is a piece of ruby code which binds itself to a port on your computer and starts listening to incoming HTTPS requests
@@ -126,21 +126,18 @@ get   / get  / get / post   / get  / patch  / delete
 
 ### VERB
 
-**REST pattern** |  **CRUD pattern (used to speak with db)**
--------------------------------------------------------------
-GET              |   Read
--------------------------------------------------------------
-POST             |   Create
--------------------------------------------------------------
-PATCH            |   Update
--------------------------------------------------------------
-DELETE           |   Delete
+| REST pattern     | CRUD pattern (used to speak with db) |
+| :---             | :----                                | 
+| GET              | Read                                 | 
+| POST             | Create                               | 
+| PATCH            | Update                               |
+| DELETE           | Delete                               |
 
 ### URL
 
-http    | ://  |  www.google.com/    |  search? | q=wagon&hl=en
-----------------------------------------------------------------
-scheme  |      |   damin name / host |   path   | query string
+| scheme  |      |   damin name / host |   path   | query string  |
+| --------| ---- | ------------------- | -------- | ------------- |
+| http    | ://  |  www.google.com/    |  search? | q=wagon&hl=en |
 
 ### Headers
 
