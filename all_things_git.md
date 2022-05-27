@@ -236,6 +236,8 @@ git merge master
 
 - view changes made
 ```bash
+# checkout changes done after last commit
+git diff
 # inspect changes of a specific file
 git diff <file_folder>
 # between two branches
