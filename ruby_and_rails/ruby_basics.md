@@ -15,3 +15,8 @@ Methods called `instance methods`, can only be called on instances of the class.
 - What is method definition?
 
 - What is a method call?
+
+## require_relative
+
+`require_relative` loads a file on another file
+the suffix `_relative` provides the path relative to the corrent location (file)
