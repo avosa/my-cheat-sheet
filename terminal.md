@@ -73,7 +73,10 @@ irb
 > REPL:<br>
 > Stands for Read–eval–print loop and it's also termed an interactive toplevel or language shell<br>
 > It is a simple interactive computer programming environment that takes single user inputs, executes them, and returns the result to the user<br>
-> It **R**eads the user input > it **E**valuates the result > it **P**rints the result > and it **L**oops back to point 1, waiting for user input
+> - It **R**eads the user input (expression)
+> - It **E**valuates the result of this expression
+> - It **P**rints the result 
+> - It **L**oops back to point 1, waiting for user input
 
 ## Vim
 
