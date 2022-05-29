@@ -70,13 +70,13 @@ The difference between variable types is in their scope.
       (prefixed with '@') - `@name = "Beatriz"`
     - **constant** - are accessible within the scope of initialisation<br>
       (capital letters) - `APPLE = "Apple"`
-<br>
+
 > class varibles and constants need to be initialised and if they are not, it will result in an error.<br>
 > local and instance variables don't have to be initialised, when uninitialised an instance varaible contains a `nil` value.<br>
 > uninitialized global variable has a `nil` value and its use can cause the programs to be cryptic and complex.
 
 - *What does “defining a variable” mean? What’s the syntax to define a variable?*<br>
-You define a variable at the same time you assign it's value
+You define a variable at the same time you assign it's value. 
 
 - *What’s the proper convention for naming variables in Ruby?*<br>
     - `snake_case` when name contains multiple words;
@@ -84,10 +84,10 @@ You define a variable at the same time you assign it's value
     - not begin with the special characters *(like e.g. & (ampersand), $ (dollar))*;
     - Avoid one-character variables *(e.g. a, b)*;
     - Clear and descriptive variable names without abbreviations are preferred
-<br>
-<br>
+
 - *What is variable assignation?*<br>
 You assign a value to a variable with the following sytax:
+
 ```ruby
 city = "Paris"
 population = 2000000
