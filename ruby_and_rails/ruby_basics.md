@@ -104,6 +104,12 @@ some_number = some_number * 2
 ## Methods
 
 - *What is a method?*<br> 
+Allows us to apply ruby code with dynamic input, over and over again.
+
+- *What is the naming convention of a method*<br>
+Just like variables, method naming takes a `snake_case` syntax.<br>
+If a method ends with a `?` it should return `true`or `false`.<br>
+A method ending with a `!` is destructive or dangerous.
 
 - *What are the methods in your program?*<br>
 Methods called `instance methods`, can only be called on instances of the class.
@@ -114,9 +120,34 @@ Methods called `instance methods`, can only be called on instances of the class.
 
 - *What’s the difference between defining a method and calling a method?*<br>
 
-- *What’s the return value of a method?*<br>
-
 - *What is the simple Ruby convention for a method’s return?*<br>
+By convention the last statement of a method is executed.<br>
+We can also explicitly state it with a `return` keyword, but that is not necessary, unless you use a guard clause.<br>
+
+> A `guard clause` is a conditional statement at the top of a function that bails out as soon as it can.
+
+### Parameters vs. Arguments
+
+A method can be defined with or without parameters.
+
+```ruby
+# method definition with parameters
+def new_population(population, births)
+  return population + births
+end
+
+# calling the method with arguments
+# the parameters are going to take the values of the arguments
+new_population(1000000, 200)
+
+#  method without parameters
+def tomorrow
+  tomorrow_date = Date.today + 1
+  return tomorrow_date.strftime("%B %d")
+end
+
+puts tomorrow   # => "October 4"
+```
 
 ## require_relative
 
